@@ -8,6 +8,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    //backend api logic
     console.log('Form submitted', { email, password, confirmPassword });
   };
 
@@ -66,8 +67,6 @@ const Login = () => {
         <h2>Designed for individuals</h2>
         <p>See the analytics and grow your data for tasks remotely, from anywhere!</p>
         <div className={styles.dashboardPreview}>
-          {/* Include a static image or another component representing the dashboard preview */}
-          <img src="/path-to-your-dashboard-preview.png" alt="Dashboard Preview" />
         </div>
       </div>
     </div>
