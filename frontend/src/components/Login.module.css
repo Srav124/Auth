@@ -1,0 +1,105 @@
+.loginContainer {
+  display: flex;
+  height: 100vh;
+  background-color: #1c1e24;
+}
+
+.loginBox {
+  flex: 1;
+  padding: 2rem;
+  background-color: #2b2d3a;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: #3a3d4f;
+  border: none;
+  color: #fff;
+}
+
+input::placeholder {
+  color: #777;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.75rem;
+  background-color: #ffae42;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.signUp {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.signUp p {
+  margin-bottom: 0.5rem;
+}
+
+.socialButtons button {
+  padding: 0.5rem;
+  background-color: #444;
+  border: none;
+  color: #fff;
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.previewBox {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.previewBox h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.previewBox p {
+  margin-bottom: 2rem;
+  color: #bbb;
+}
+
+.dashboardPreview {
+  display: flex;
+  justify-content: center;
+}
+
+.dashboardPreview img {
+  width: 100%;
+  max-width: 500px;
+}
