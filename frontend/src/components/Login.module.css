@@ -1,38 +1,45 @@
-.loginContainer {
+.loginContainer{
   display: flex;
-  height: 100vh;
-  background-color: #1c1e24;
+  width: 80%;
+  max-width: 100%;
+  height: 80%;
+  margin: 5rem; /* Add margin to center the container vertically */
+  background-color: #333742; /* Lighter container background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.loginBox {
-  flex: 1;
-  padding: 2rem;
-  background-color: #2b2d3a;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.loginBox{
+    flex: 1;
+    padding: 2rem;
+    background-color: #3a3d4f;
+    margin: 0.5rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-h2 {
+h1{
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
 
-form {
+form{
   display: flex;
   flex-direction: column;
 }
 
-label {
+label{
   margin-bottom: 0.5rem;
 }
 
-input {
-  padding: 0.5rem;
+input{
   margin-bottom: 1rem;
-  background-color: #3a3d4f;
+  background-color: #484b5c;
+  padding: 0.5rem;
   border: none;
+  border-radius: 4px;
   color: #fff;
 }
 
@@ -40,29 +47,34 @@ input::placeholder {
   color: #777;
 }
 
-.options {
+.rememberMe{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
+  justify-content: left;
+  flex-direction: row;
 }
 
-button {
-  padding: 0.75rem;
+.forgotPassword{
+  display: flex;
+  justify-content: end;
+}
+
+.forgotPassword a{
+  color: white;
+}
+
+.button{
   background-color: #ffae42;
-  border: none;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 1rem;
+  color: white;
+  font-weight: bolder;
+  border-radius: 4px;
 }
 
-.signUp {
+.signup {
   text-align: center;
   margin-top: 1.5rem;
 }
 
-.signUp p {
+.signup p {
   margin-bottom: 0.5rem;
 }
 
@@ -70,36 +82,73 @@ button {
   padding: 0.5rem;
   background-color: #444;
   border: none;
+  border-radius: 4px;
   color: #fff;
   margin: 0 0.5rem;
   font-size: 1.2rem;
 }
-
-.previewBox {
+.preview{
   flex: 1;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    padding: 2rem;
+    background-color: #3a3d4f;
+    margin: 0.5rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.previewBox h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #fff;
-}
-
-.previewBox p {
-  margin-bottom: 2rem;
-  color: #bbb;
-}
-
-.dashboardPreview {
-  display: flex;
-  justify-content: center;
-}
-
-.dashboardPreview img {
+.imageBox img{
   width: 100%;
   max-width: 500px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+.passwordInputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.passwordInputContainer input {
+  width: 100%;
+  padding-right: 30px; /* Space for the eye icon */
+}
+
+.eyeIcon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.eyeIcon img{
+  margin-bottom: 0.5rem;
+  width: 20px;
+}
+
+.cnfPassword{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cnfPassword input{
+  width: 100%;
+  margin: 0; /* Remove all margins */
+}
+.matched{
+  width: 100%;
+}
+.notmatched:focus{
+  border: 2px solid;
+  border-color: red;
+  width: 100%;
+  border: red;
+}
+
+.cnfPassword p{
+  color: red;
+  margin-top: 0.25rem; 
 }
